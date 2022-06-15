@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+}
+
+.textLink {
+  color: #1975d1;
+  text-decoration: none;
+}
+.textLink:hover {
+  color: #51ebc0;
+}
+
+.rollingTyreSvg {
+  position: absolute;
+  top: 100;
+  left: 0;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  transform-origin: center;
+  -webkit-animation: 2s ease-in-out infinite spin;
+          animation: 2s ease-in-out infinite spin;
+}
+
+.editable-header:hover {
+  background-color: #d4e7ff;
+}
+
+.non-editable-header:hover {
+  opacity: 0.5;
+}
+
+.clickable-header {
+  cursor: pointer;
+}
+.clickable-header:hover {
+  background-color: #d4e7ff;
+}
+
+.true-header {
+  background-color: #16c090;
+  cursor: not-allowed;
+}
+
+.false-header {
+  background-color: #d32f2f;
+  cursor: not-allowed;
+}
+
+.header-logo:hover {
+  opacity: 0.5;
+}
+
+.bg {
+  background-color: #001b3d;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}/*# sourceMappingURL=main.css.map */

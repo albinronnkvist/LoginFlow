@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+
+$xs: 0px;
+$sm: 600px;
+$md: 900px;
+$lg: 1200px;
+$xl: 1536px;
+
+$green: "#16c090";
+$green-light: lighten(#16c090, 20);
+$green-dark: darken(#16c090, 20);
+
+.textLink {
+    color: #1975d1;
+    text-decoration: none;
+
+    &:hover {
+        color: $green-light;
+    }
+}
+
+.rollingTyreSvg {
+    position: absolute;
+    top: 100;
+    left: 0;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spin {
+    transform-origin: center;
+    animation: 2s ease-in-out infinite spin;
+}
+
+.editable-header {
+    &:hover {
+        background-color: lighten(#001a3b, 80);
+    }
+}
+.non-editable-header {
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.clickable-header {
+    cursor: pointer;
+    
+    &:hover {
+        background-color: lighten(#001a3b, 80);
+    }
+}
+
+.true-header {
+    background-color: #16c090;
+    cursor: not-allowed;
+}
+
+.false-header {
+    background-color: #d32f2f;
+    cursor: not-allowed;
+}
+
+.header-logo {
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.bg {
+    background-color: #001b3d; 
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    z-index: -3;
+}
